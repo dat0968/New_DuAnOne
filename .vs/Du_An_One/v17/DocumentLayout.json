@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Merge_Duanone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\nhacungcapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\nhacungcapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|e:\\merge_duanone\\du_an_one\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NHACUNGCAPsController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:06.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NHANVIENsController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:04.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SANPHAMsController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:00.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Models\\LoginViewModel.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Du_An_One\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:14:16.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\appsettings.json",
+              "RelativeDocumentMoniker": "Du_An_One\\appsettings.json",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\appsettings.json",
+              "RelativeToolTip": "Du_An_One\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-20T14:34:00.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Program.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Program.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Program.cs",
+              "RelativeToolTip": "Du_An_One\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:32:18.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-20T14:12:21.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:12:15.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAAAAAEgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:11:36.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\Merge_Duanone\\Du_An_One\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:09:56.456Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
