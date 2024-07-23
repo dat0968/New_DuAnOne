@@ -1,7 +1,36 @@
-﻿@{
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Du_An_One.Models.SANPHAM>
+@{
     ViewData["Title"] = "Home Page";
 }
 
+
+
+
+@foreach (var oneProduct in Model)
+{
+    var img = oneProduct.HinhAnh.Length < 10 ? "~/img/productImage/default.jpg" : "~/img/productImage/" + oneProduct.HinhAnh;
+
+    <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="@Url.Content(img)" alt="@oneProduct.TenSP"
+             alt="Product 1"
+             class="mb-4"
+             style="object-fit: center; width: 100%; height: 300px" />
+        <h3 class="text-2xl font-semibold mb-2">@oneProduct.TenSP</h3>
+        <p class="mb-4">Giá: @oneProduct.DonGiaBan VND</p>
+        <a asp-controller="Login" asp-action="Index" class="bg-primary text-primary-foreground hover:bg-primary/80 py-2 px-4 rounded-lg text-white"
+           style="background-color: rgb(139, 97, 255);cursor: pointer;">
+            Mua ngay
+        </a>
+    </div>
+}
+
+
+
+
+
+
+@* 
 <section style="background-color: #eee;">
     <div class="container py-5">
         <div class="row">
@@ -178,4 +207,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> *@

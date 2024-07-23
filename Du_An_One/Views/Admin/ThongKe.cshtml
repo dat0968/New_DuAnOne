@@ -1,0 +1,119 @@
+﻿
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Mvc;
+@using ClosedXML.Excel;
+@{
+    var customerStat = ViewBag.CustomerStat as int[];
+    var salesRevenueStat = ViewBag.SalesRevenueStat as double[];
+    var orderStat = ViewBag.OrderStat as int[];
+}
+
+@{
+    ViewData["Title"] = "ThongKe";
+    Layout = "~/Views/_LayoutAdmin.cshtml";
+}
+
+@section head {
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+}
+<div class="bg-background text-primary-foreground p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <div class="bg-card p-4 rounded-lg shadow-lg">
+        <h2 class="text-lg font-semibold mb-4">Customer Statistics</h2>
+        <p>Total Customers: 1000</p>
+        <p>New Customers Today: 20</p>
+        <p>New Customers This Month: 300</p>
+        <p>New Customers This Year: 2500</p>
+    </div>
+
+    <div class="bg-card p-4 rounded-lg shadow-lg">
+        <h2 class="text-lg font-semibold mb-4">Sales Revenue Statistics</h2>
+        <p>Total Revenue: @salesRevenueStat[0].ToString("C")</p>
+        <p>Revenue Today: @salesRevenueStat[1].ToString("C")</p>
+        <p>Revenue This Month: @salesRevenueStat[2].ToString("C")</p>
+        <p>Revenue This Year: @salesRevenueStat[3].ToString("C")</p>
+    </div>
+
+    <div class="bg-card p-4 rounded-lg shadow-lg">
+        <h2 class="text-lg font-semibold mb-4">Order Statistics</h2>
+        <p>Total Orders: @orderStat[0]</p>
+        <p>Orders Today: @orderStat[1]</p>
+        <p>Orders This Month: @orderStat[2]</p>
+        <p>Orders This Year: @orderStat[3]</p>
+    </div>
+
+    <div class="bg-card p-4 rounded-lg shadow-lg col-span-3">
+
+        <h2 class="text-lg font-semibold mb-4">Employee Statistics</h2>
+
+        <div class=""
+             style="display: flex; justify-content: space-between; align-items: center">
+            <p>
+                <a asp-controller="Admin"
+                   asp-action="XuatDanhSachThongKeNhanVien"
+                   class="btn btn-success">Xuất danh sách thống kê nhân viên</a>
+            </p>
+            <form action="@Url.Action("ThongKe", "Admin")"
+                  method="get"
+                  style="
+                      display: flex;
+                      align-items: center;
+                      border-radius: 4px;
+                      margin: 0;
+                      padding: 4px;
+                    ">
+                <fieldset style="
+                    border: 2px solid #ccc;
+                    border-radius: 8px;
+                    padding: 16px;
+                    margin-bottom: 16px;">
+                    <legend style="
+                        font-weight: bold;
+                        padding: 0 8px;
+                        inline-size: auto;">
+                        Find staff
+                    </legend>
+                    <input type="text"
+                           name="MaNV"
+                           placeholder="Tìm kiếm..."
+                           class="bg-input text-primary-foreground dark:text-primary p-2 rounded ml-2" />
+                    <button type="submit" class="bg-primary text-primary-foreground p-2 rounded-lg ml-2 hover:bg-primary/80">
+                        Search
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+
+        @if (ViewBag.EmployeeStat != null)
+        {
+            <table class="table-auto w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Mã NV</th>
+                        <th class="px-4 py-2">Họ Tên</th>
+                        <th class="px-4 py-2">Số đơn hàng</th>
+                        <th class="px-4 py-2">Tổng doanh thu</th>
+                        <th class="px-4 py-2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.EmployeeStat)
+                    {
+                        <tr>
+                            <td class="border px-4 py-2">@item.MaNV</td>
+                            <td class="border px-4 py-2">@item.HoTen</td>
+                            <td class="border px-4 py-2">@item.NumOrder</td>
+                            <td class="border px-4 py-2">@item.TotalAmount.ToString("C")</td>
+                            <td class="border px-4 py-2"><a asp-action="DanhSachHoaDonCuaNhanVien" asp-route-MaNV="@item.MaNV">Chi tiết</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No employee statistics available.</p>
+        }
+    </div>
+</div>

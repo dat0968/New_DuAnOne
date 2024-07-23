@@ -27,8 +27,8 @@
                         </div>
                         <div class="col col-stats ms-3 ms-sm-0">
                             <div class="numbers">
-                                <p class="card-category">Visitors</p>
-                                <h4 class="card-title">1,294</h4>
+                                <p class="card-category">Users</p>
+                                <h4 class="card-title">@ViewBag.CountData.Users</h4>
                             </div>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
                         </div>
                         <div class="col col-stats ms-3 ms-sm-0">
                             <div class="numbers">
-                                <p class="card-category">Subscribers</p>
-                                <h4 class="card-title">1303</h4>
+                                <p class="card-category">Staffs</p>
+                                <h4 class="card-title">@ViewBag.CountData.Staffs</h4>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                         <div class="col col-stats ms-3 ms-sm-0">
                             <div class="numbers">
                                 <p class="card-category">Sales</p>
-                                <h4 class="card-title">$ 1,345</h4>
+                                <h4 class="card-title">@ViewBag.CountData.Sales.ToString("C")</h4>
                             </div>
                         </div>
                     </div>
@@ -84,8 +84,8 @@
                         </div>
                         <div class="col col-stats ms-3 ms-sm-0">
                             <div class="numbers">
-                                <p class="card-category">Order</p>
-                                <h4 class="card-title">576</h4>
+                                <p class="card-category">Finish Order</p>
+                                <h4 class="card-title">@ViewBag.CountData.FinishOrder</h4>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
             <div class="card card-round">
                 <div class="card-body pb-0">
                     <div class="h1 fw-bold float-end text-primary">+5%</div>
-                    <h2 class="mb-2">17</h2>
+                    <h2 class="mb-2">@ViewBag.CountData.ActiveUsers</h2>
                     <p class="text-muted">Users online</p>
                     <div class="pull-in sparkline-fix">
                         <div id="lineChart"></div>
@@ -445,97 +445,51 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        Payment from #10231
-                                    </th>
-                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                    <td class="text-end">$250.00</td>
-                                    <td class="text-end">
-                                        <span class="badge badge-success">Completed</span>
-                                    </td>
-                                </tr>
+                                @* Note This Is Data Transaction History *@
+                                @foreach (var aTransation in ViewBag.TransactionHistory)
+                                {
+                                    <tr>
+                                        <th scope="row">
+                                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            Payment from #@aTransation.MaHoaDon
+                                        </th>
+                                        <td class="text-end">@aTransation.DTime</td>
+                                        <td class="text-end">@aTransation.TotalAmount</td>
+                                        <td class="text-end">
+                                            @{
+                                                string badgeClass = "badge-black"; // Default class
+                                                switch (aTransation.TinhTrang)
+                                                {
+                                                    case "Chờ thanh toán":
+                                                        badgeClass = "badge-warning";
+                                                        break;
+                                                    case "Chuẩn bị hàng":
+                                                        badgeClass = "badge-info";
+                                                        break;
+                                                    case "Đang giao hàng":
+                                                        badgeClass = "badge-primary";
+                                                        break;
+                                                    case "Chờ giao hàng":
+                                                        badgeClass = "badge-secondary";
+                                                        break;
+                                                    case "Đã thanh toán":
+                                                        badgeClass = "badge-success";
+                                                        break;
+                                                    case "Đã hủy":
+                                                        badgeClass = "badge-danger";
+                                                        break;
+                                                    case "Hoàn trả/Hoàn tiền":
+                                                        badgeClass = "badge-danger";
+                                                        break;
+                                                }
+                                            }
+                                            <span class="badge @badgeClass">@aTransation.TinhTrang</span>
+
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>

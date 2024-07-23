@@ -64,11 +64,10 @@
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <ul class="nav nav-pills flex-column mb-auto">
-
                         <li class="nav-item">
                             <a asp-controller="Admin" asp-action="TongQuan">
                                 <i class="fa-solid fa-house"></i>
-                                <h1>Tong Quan</h1>
+                                <h1>Tổng quan</h1>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -431,7 +430,7 @@
                 <!-- End Navbar -->
             </div>
 
-            <div class="container">
+            <div class="container" style="padding:50px !important">
                 @RenderBody()
             </div>
         </div>
@@ -474,5 +473,7 @@
     <script src="~/js/setting-demo.js"></script>
     <script src="~/js/demo.js"></script>
 
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("head", required: false)
 </body>
 </html>

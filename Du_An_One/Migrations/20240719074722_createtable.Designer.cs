@@ -391,6 +391,10 @@ namespace Du_An_One.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("HinhAnh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("NHANVIENMaNV")
                         .HasColumnType("nvarchar(5)");
 
