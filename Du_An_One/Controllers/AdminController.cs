@@ -12,7 +12,7 @@ namespace Du_An_One.Controllers
         public AdminController(Du_An_OneContext context) { 
             _context = context;
         }
-        public IActionResult TongQuan()
+        public IActionResult TongQuan(string? MaNV = "")
         {
             ViewBag.CountData = new
             {
@@ -43,11 +43,9 @@ namespace Du_An_One.Controllers
                     TotalAmount = Math.Round(group.Sum(g => g.Amount),2),
                     TinhTrang = group.Key.TinhTrang
                 });
-            return View();
-        }
 
-        public IActionResult ThongKe(string? MaNV = "")
-        {
+            //Thong Ke
+
             int thisMonth = DateTime.Now.Month;
             int thisYear = DateTime.Now.Year;
             ViewBag.CustomerStat = new int[]
@@ -119,10 +117,6 @@ namespace Du_An_One.Controllers
                     TotalAmount = e.Sum(x => x.SoLuongMua * x.DonGia)
                 })
                 .ToList();
-            /*foreach (var item in employeeStats)
-            {
-                Console.WriteLine(item.MaNV + item.HoTen + item.NumOrder + item.TotalAmount);
-            }*/
             ViewBag.EmployeeStat = employeeStats;
             return View();
         }
