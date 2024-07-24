@@ -46,7 +46,7 @@ namespace Du_An_One.Controllers
             return View();
         }
 
-        public IActionResult ThongKe(string findData)
+        public IActionResult ThongKe(string? MaNV = "")
         {
             int thisMonth = DateTime.Now.Month;
             int thisYear = DateTime.Now.Year;
@@ -76,7 +76,7 @@ namespace Du_An_One.Controllers
                 _context.HOADON.Count(h => h.NgayTao.Year == thisYear && h.TinhTrang.Contains("Đã thanh toán")),
             };
             var HOADON = _context.HOADON
-                .Where(h => h.TinhTrang.Contains("Đã thanh toán"))
+                .Where(h => h.TinhTrang.Contains("Đã thanh toán") && h.MaNV.Contains(MaNV))
                 .GroupBy(h => new { h.MaHoaDon, h.MaNV })
                 .Select(g => new
                 {
@@ -126,6 +126,7 @@ namespace Du_An_One.Controllers
             ViewBag.EmployeeStat = employeeStats;
             return View();
         }
+        
         public IActionResult XuatDanhSachThongKeNhanVien()
         {
             int thisMonth = DateTime.Now.Month;
@@ -216,10 +217,11 @@ namespace Du_An_One.Controllers
                 }
             }
         }
+        
         public IActionResult DanhSachHoaDonCuaNhanVien(string MaNV)
         {
             var listCodeCheckOfStaff = _context.HOADON
-                .Where(x => x.MaNV == MaNV)
+                .Where(x => x.MaNV == MaNV && x.TinhTrang.Contains("Đã thanh toán"))
                 .Select(x => new { x.MaHoaDon, x.NgayTao })
                 .ToList();
             ViewBag.DuLieuHomNay = listCodeCheckOfStaff

@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\css\\plugins.min.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\style_LRF.css",
+      "PackagePath": "staticwebassets\\css\\style_LRF.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -4,17 +4,49 @@
 @{
     Layout = null;
 }
-<head>
+<head>@* 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    <link rel="stylesheet" href="~/css/style_LRF.css" asp-append-version="true" />
+    @* <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js"
             defer
-            init></script>
+            init></script>*@
 </head>
 @model LoginViewModel;
 
-<section class="vh-100">
+<div class="form-wrapper" id="li">
+    <h2>Đăng nhập</h2>
+    <form method="post">
+        <div class="form-control">
+            <input type="text" asp-for="TenTaiKhoan" id="form3Example3" required />
+            <label for="form3Example3">Email hoặc Số điện thoại</label>
+        </div>
+        <div class="form-control">
+            <input type="password" asp-for="MatKhau" id="form3Example4" required />
+            <label for="form3Example4">Mật khẩu</label>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </div>
+        <button type="submit">Đăng nhập</button>
+        <div class="form-help">
+            <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="remember-me" />
+                <label for="remember-me">Nhớ mật khẩu</label>
+            </div>
+            <a asp-controller="Login" asp-action="ForgotPassword">Quên mật khẩu?</a>
+        </div>
+    </form>
+    <p>
+        Mới đăng nhập lần đầu?
+        <a asp-controller="Login" asp-action="Register">Đăng kí ngay</a>
+    </p>
+    <small>
+        Trang web này được bảo vệ bởi Google reCAPTCHA để đảm bảo bạn không phải là bot
+        <a href="#">Tìm hiểu.</a>
+    </small>
+</div>
+
+@* <section class="vh-100">
     <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-md-9 col-lg-6 col-xl-5">
@@ -84,4 +116,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> *@

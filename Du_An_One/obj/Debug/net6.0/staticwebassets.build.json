@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l6FfUO0bBOmkMkWeAjPkUjDawW70FJ8G1UlSyfaZSPo=",
+  "Hash": "t3QqvpsBY+c0GQeKrMgkI3GZZ5+T73GOQX09z3359ho=",
   "Source": "Du_An_One",
   "BasePath": "_content/Du_An_One",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\plugins.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\style_LRF.css",
+      "SourceId": "Du_An_One",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\",
+      "BasePath": "_content/Du_An_One",
+      "RelativePath": "css/style_LRF.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style_LRF.css"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\favicon.ico",

@@ -66,4 +66,11 @@
     <Folder Include="wwwroot\img\productImage\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\css\style_LRF.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
