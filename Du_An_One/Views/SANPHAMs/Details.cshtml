@@ -1,72 +1,138 @@
 ﻿@model Du_An_One.Models.SANPHAM
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Views/_LayoutAdmin.cshtml";
 }
 
-<h1>Details</h1>
+@section head {
+    <style>
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
 
-<div>
-    <h4>SANPHAM</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TenSP)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TenSP)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SoLuongBan)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SoLuongBan)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DonGiaBan)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DonGiaBan)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayNhap)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgayNhap)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DanhMucHang)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DanhMucHang)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.KichCo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.KichCo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MoTa)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MoTa)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaKhuyenMai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaKhuyenMai)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaNV)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaNV)
-        </dd>
-    </dl>
+            .gallery img {
+                width: 300px;
+                height: 400px;
+                object-fit: contain;
+                cursor: pointer;
+            }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+}
+
+<h1>Chi Tiết Sản Phẩm</h1>
+
+<!-- View Detail Product For Admin -->
+<div style="justify-content: space-evenly;">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Sản Phẩm</h4>
+            <hr />
+            <dl>
+                <dt>Mã Sản Phẩm</dt>
+                <dd>@Model.MaSP</dd>
+                <dt>Tên Sản Phẩm</dt>
+                <dd>@Model.TenSP</dd>
+                <dt>Số Lượng Bán</dt>
+                <dd>@Model.SoLuongBan</dd>
+                <dt>Đơn Giá Bán</dt>
+                <dd>@Model.DonGiaBan</dd>
+                <dt>Ngày Nhập</dt>
+                <dd>@Model.NgayNhap.ToString("dd/MM/yyyy")</dd>
+                <dt>Danh Mục Hàng</dt>
+                <dd>@Model.DanhMucHang</dd>
+                <dt>Kích cỡ</dt>
+                <dd>@Model.KichCo</dd>
+                <dt>Mô Tả</dt>
+                <dd>@Model.MoTa</dd>
+                <!-- Bạn có thể thêm các trường khác tương ứng với các thuộc tính của Sanpham -->
+            </dl>
+        </div>
+        <div class="col-md-5">
+            <h4>Hình ảnh sản phẩm</h4>
+            <hr />
+
+            <div class="container" style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: 0 auto;">
+
+                <img data-imgbigurl="@Url.Content(Model.HinhAnh)" src="@Url.Content(Model.HinhAnh)" alt="" class="image-large object-contain" style="
+                    width: 100%;
+                    height: auto;" onclick="openModal(this)">
+                <div class="gallery">
+                    @foreach (var aImage in ViewBag.anhSanPham)
+                    {
+                        <img data-imgbigurl="@Url.Content("~/img/productImage/" + aImage)" src="@Url.Content("~/img/productImage/" + aImage)" alt="Image 1" onclick="openModal(this)">
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal" onclick="closeModal(event)">
+    @* <span class="close" onclick="closeModal()">&times;</span> *@
+    <img class="modal-content" id="img01">
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.MaSP">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-primary">Quay lại</a>
 </div>
+
+@section Scripts {
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+        }
+
+        function closeModal(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target.tagName.toLowerCase() === 'img' || event.target.classList.contains('modal-content')) {
+                return;
+            }
+            modal.style.display = "none";
+        }
+    </script>
+}

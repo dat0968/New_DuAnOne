@@ -1,83 +1,158 @@
-﻿@model IEnumerable<Du_An_One.Models.SANPHAM>
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Du_An_One.Models.SANPHAM>
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/_LayoutAdmin.cshtml";
 }
 
-<h1>Index</h1>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h1>Danh mục sản phẩm</h1>
+<h2 style="color:@(TempData["Message"] != null && TempData["Message"].ToString().Contains("Không xóa") ? "red" : "blue")">@TempData["Message"]</h2>
+
+<div class=""
+     style="display: flex; justify-content: space-between; align-items: center">
+    <p>
+        <a asp-action="Create" class="btn btn-success">Tạo mới</a>
+        <a asp-action="ExportProductsToExcel"
+           class="btn btn-success">Xuất danh sách sản phẩm</a>
+    </p>
+    <form action="@Url.Action("Index", "SANPHAMs")"
+          method="get"
+          style="
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      margin: 0;
+      padding: 4px;
+    ">
+        <fieldset style="
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;">
+            <legend style="
+                font-weight: bold;
+                padding: 0 8px;
+                inline-size: auto;">
+                Tìm kiếm
+            </legend>
+            <select name="brand" class="bg-input dark:bg-primary text-primary-foreground dark:text-primary p-2 rounded">
+                <option value="" selected>Chọn hãng</option>
+                <option value="TUFT">TUFT</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Adius">Adius</option>
+                <option value="Surius">Surius</option>
+            </select>
+            <select name="quantitySold" class="bg-input text-primary-foreground dark:text-primary p-2 rounded ml-2">
+                <option value="" selected>Chọn phạm vi số lượng</option>
+                <option value="1-50">1 - 50</option>
+                <option value="51-100">51 - 100</option>
+                <option value="101-200">101 - 200</option>
+                <option value="201+">201+</option>
+            </select>
+            <select name="price" class="bg-input text-primary-foreground dark:text-primary p-2 rounded ml-2">
+                <option value="" selected>Chọn phạm vi giá</option>
+                <option value="0-100000">0 - 100.000 VND</option>
+                <option value="100001-200000">100.001 - 200.000 VND</option>
+                <option value="200001-500000">200.001 - 500.000 VND</option>
+                <option value="500001+">500.001 VND+</option>
+            </select>
+
+            <input type="text"
+                   name="maSanPham"
+                   placeholder="Tìm kiếm..."
+                   class="bg-input text-primary-foreground dark:text-primary p-2 rounded ml-2" />
+            <button type="submit" class="bg-primary text-primary-foreground p-2 rounded-lg ml-2 hover:bg-primary/80 btn">
+                Search
+            </button>
+        </fieldset>
+    </form>
+</div>
+
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TenSP)
+                Tên sản phẩm
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SoLuongBan)
+                Số lượng bán
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DonGiaBan)
+                Đơn giá bán
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NgayNhap)
+                Ngày nhập
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DanhMucHang)
+                Danh mục hàng
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.KichCo)
+                Hình ảnh
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MoTa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaKhuyenMai)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaNV)
+                Mô tả
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenSP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLuongBan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DonGiaBan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayNhap)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DanhMucHang)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.KichCo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MoTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaKhuyenMai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaNV)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaSP">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaSP">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaSP">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+
+            var img = item.HinhAnh.Length < 10 ? "~/img/productImage/default.jpg" : "~/img/productImage/" + item.HinhAnh;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuongBan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonGiaBan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayNhap)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DanhMucHang)
+                </td>
+                <td>
+                    <img data-imgbigurl="@Url.Content(img)" src="@Url.Content(img)" alt="No Image🖼" style="width: 100px; height: auto;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-MaSP="@item.MaSP">Sửa</a> |
+                    <a asp-action="Details" asp-route-MaSP="@item.MaSP">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaSP">Xóa</a>
+                </td>
+            </tr>
+        }
+
     </tbody>
 </table>
+
+
+@if (Model.Count() == 0)
+{
+    <p style="text-align:center">Dữ liệu không tìm thấy</p>
+}
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string> { "page-item" },
+    PageClasses = new List<string> { "page-link" }
+})
+
+@section Scripts {
+    <script>
+        function searchProducts() {
+            var searchQuery = document.getElementById('searchInput').value;
+            window.location.href = '@Url.Action("Index", "SANPHAMs")' + '?maSanPham=' + searchQuery;
+        }
+    </script>
+}

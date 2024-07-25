@@ -1,6 +1,8 @@
-﻿using Du_An_One.Models;
+﻿using Du_An_One.Data;
+using Du_An_One.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SQLitePCL;
 using System.Diagnostics;
 
 namespace Du_An_One.Controllers
@@ -8,14 +10,16 @@ namespace Du_An_One.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly Du_An_OneContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, Du_An_OneContext context)
         {
             _logger = logger;
+            _context = context;
         }
         public IActionResult Index()
         {
-            return View();
+            return View(_context.SANPHAM.OrderByDescending(x => x.NgayNhap).Take(6).ToList());
         }
 
         public IActionResult Privacy()

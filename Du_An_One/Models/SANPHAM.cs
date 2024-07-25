@@ -25,6 +25,9 @@ namespace Du_An_One.Models
         [Required]
         [StringLength(40)]
         public string? DanhMucHang { get; set; }
+        [StringLength(50)]
+        public string? HinhAnh { get; set; }
+
         [Required]
         [StringLength(3)]
         public string? KichCo {  get; set; }
@@ -38,6 +41,10 @@ namespace Du_An_One.Models
         [ForeignKey("MaNV")]
         public string? MaNV { get; set; }
         public NHANVIEN? NHANVIEN { get; set; }
+
+        [NotMapped] public IFormFile? FileImage { get; set; }
+        [NotMapped] public List<IFormFile>? FileImages { get; set; } // New property for multiple images
+
         public ICollection<CHITIETHOADON>? CHITIETHOADONs { get; set; }
         public ICollection<CHITIETNHAP>? CHITIETNHAPs { get; set; }
         public ICollection<HINHANH>? HINHANHs { get; set; }
