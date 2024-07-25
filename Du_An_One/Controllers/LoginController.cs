@@ -42,7 +42,7 @@ namespace Du_An_One.Controllers
             ClaimsIdentity claimsIdentity;
             AuthenticationProperties properties = new AuthenticationProperties()
             {
-                AllowRefresh = true,
+                //AllowRefresh = true,
             };
             var qr_nhanvien = _db.NHANVIEN.FirstOrDefault(s => s.TenTaiKhoan == model.TenTaiKhoan && s.MatKhau == model.MatKhau);
             var qr_khachhang = _db.KHACHHANG.FirstOrDefault(s => s.TenTaiKhoan == model.TenTaiKhoan && s.MatKhau == model.MatKhau);
@@ -99,11 +99,11 @@ namespace Du_An_One.Controllers
                 claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), properties);
                 return RedirectToAction("Index", "Home");
+            } else if (model != null) {
+
+                TempData["SwalIcon"] = "error";
+                TempData["SwalTitle"] = "Vui lòng nhập đúng tài khoản hoặc mật khẩu.";
             }
-
-            TempData["SwalIcon"] = "error";
-            TempData["SwalTitle"] = "Đăng nhập không thành công";
-
 
 
             return View();
@@ -184,12 +184,12 @@ namespace Du_An_One.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(KHACHHANG model)
+        public IActionResult Register(KHACHHANG model, string rePass)
         {
             Random random = new Random();
             int randomValue = random.Next(1000);
             string maKH = "KH" + randomValue.ToString("D3");
-            if (model.HoTen != null && model.SDT != null && model.Email != null && model.TenTaiKhoan != null && model.MatKhau != null)
+            if (model.MatKhau == rePass)
             {
                 var newUser = new KHACHHANG
                 {
@@ -210,9 +210,12 @@ namespace Du_An_One.Controllers
                 _db.SaveChanges();
 
                 return RedirectToAction("Index", "Login");
+            } else
+            {
+                TempData["rePass"] = "Vui lòng nhập lại đúng mật khẩu";
+                return View(model);
             }
 
-            return View(model);
         }
 
         public IActionResult ForgotPassword()
