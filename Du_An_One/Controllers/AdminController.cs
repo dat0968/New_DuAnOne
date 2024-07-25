@@ -2,6 +2,7 @@
 using Du_An_One.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
 
 namespace Du_An_One.Controllers
 {
@@ -14,6 +15,7 @@ namespace Du_An_One.Controllers
         }
         public IActionResult TongQuan(string? MaNV = "")
         {
+            #region//Thống kê đơn giản
             ViewBag.CountData = new
             {
                 Users = _context.KHACHHANG.Count(),
@@ -22,7 +24,60 @@ namespace Du_An_One.Controllers
                 Sales = 666,
                 FinishOrder = _context.HOADON.Count(hd => hd.TinhTrang == "Đã thanh toán")
             };
+            #endregion
 
+            #region//Thống kê theo tình trạng hóa đơn
+            ViewBag.CountOrderByStatus = new
+            {
+                Total = _context.HOADON.Count(),
+                WaitPayOrder = _context.HOADON.Count(h => h.TinhTrang == "Chờ thanh toán"),
+                WrapOrder = _context.HOADON.Count(h => h.TinhTrang == "Chuẩn bị hàng"),
+                DeliverOrder = _context.HOADON.Count(h => h.TinhTrang == "Đang giao hàng"),
+                WaitDeliverOrder = _context.HOADON.Count(h => h.TinhTrang == "Chờ giao hàng"),
+                PayOrder = _context.HOADON.Count(h => h.TinhTrang == "Đã thanh toán"),
+                CancelOrder = _context.HOADON.Count(h => h.TinhTrang == "Đã hủy"),
+                BackOrder = _context.HOADON.Count(h => h.TinhTrang == "Hoàn trả/Hoàn tiền")
+            };
+            #endregion
+
+            #region//Thống kê doanh thu theo ngày
+            string?[] listCodeOrderToday = _context.HOADON
+                .Where(hd => hd.TinhTrang == "Đã thanh toán" && hd.NgayTao.Date == DateTime.Now.Date)
+                .Select(hd => hd.MaHoaDon).ToArray();
+            DateTime NgayDauTuan = DateTime.Now.AddDays(-(int)DateTime.Now.DayOfWeek);
+            DateTime NgayCuoiTuan = DateTime.Now.AddDays(7 - (int)DateTime.Now.DayOfWeek);
+            var listCodeOrderWeek = _context.HOADON
+                .Where(hd => hd.TinhTrang == "Đã thanh toán" && hd.NgayTao.Date >= NgayDauTuan.Date && hd.NgayTao.Date <= NgayCuoiTuan.Date)
+                .Select(hd => new { hd.MaHoaDon, hd.NgayTao })
+                .OrderBy(hd => hd.NgayTao).ToList();
+/*
+            var weekSales = _context.CHITIETHOADON
+                .AsEnumerable()
+                .Join(listCodeOrderWeek, ct => ct.MaHoaDon, lcw => lcw.MaHoaDon, (ct, lcw) => new
+                {
+                    lcw.MaHoaDon,
+                    DoanhThu = ct.SoLuongMua * ct.DonGia,
+                    lcw.NgayTao
+                })
+                .AsEnumerable()
+                .GroupBy(g =>new { g.NgayTao.Date })
+                .Select(g => new
+                {
+                    NgayTao = g.Key.Date.ToString("yyyy-MM-dd"),
+                    DoanhThu = Math.Round(g.Sum(x => x.DoanhThu),2)
+                }).ToList();
+*/
+            ViewBag.WeekSales = new
+            {
+                Today = _context.CHITIETHOADON
+                    .Where(ct => listCodeOrderToday.Contains(ct.MaHoaDon))
+                    .Sum(ct => ct.SoLuongMua * ct.DonGia),
+                //Week = weekSales
+            };
+
+            #endregion
+
+            #region//Thống kê tình trạng các hóa đơn gần đây
             ViewBag.TransactionHistory = _context.HOADON
                 .OrderByDescending(x => x.NgayTao)
                 .Take(7)
@@ -43,6 +98,7 @@ namespace Du_An_One.Controllers
                     TotalAmount = Math.Round(group.Sum(g => g.Amount),2),
                     TinhTrang = group.Key.TinhTrang
                 });
+            #endregion
 
             //Thong Ke
 
