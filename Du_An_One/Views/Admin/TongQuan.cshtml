@@ -1,4 +1,5 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@using Newtonsoft.Json;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using Microsoft.AspNetCore.Mvc;
 @using ClosedXML.Excel;
 @{
@@ -15,8 +16,7 @@
 <div class="page-inner">
     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
         <div>
-            <h3 class="fw-bold mb-3">Dashboard</h3>
-            <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
+            <h3 class="fw-bold mb-3">Tổng quan</h3>
         </div>
         <div class="ms-md-auto py-2 py-md-0">
             <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
@@ -180,41 +180,12 @@
                     }
                 </div>
             </div>
-
-            @* <div class="card card-round">
-                <div class="card-header">
-                    <div class="card-head-row">
-                        <div class="card-title">User Statistics</div>
-                        <div class="card-tools">
-                            <a href="#"
-                               class="btn btn-label-success btn-round btn-sm me-2">
-                                <span class="btn-label">
-                                    <i class="fa fa-pencil"></i>
-                                </span>
-                                Export
-                            </a>
-                            <a href="#" class="btn btn-label-info btn-round btn-sm">
-                                <span class="btn-label">
-                                    <i class="fa fa-print"></i>
-                                </span>
-                                Print
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="chart-container" style="min-height: 375px">
-                        <canvas id="statisticsChart"></canvas>
-                    </div>
-                    <div id="myChartLegend"></div>
-                </div>
-            </div> *@
         </div>
         <div class="col-md-4">
             <div class="card card-primary card-round">
                 <div class="card-header">
                     <div class="card-head-row">
-                        <div class="card-title">Daily Sales</div>
+                        <div class="card-title">Doanh thu trong ngày</div>
                         <div class="card-tools">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-label-light dropdown-toggle"
@@ -234,14 +205,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-category">March 25 - April 02</div>
+                    <div class="card-category">@DateTime.Now.AddDays(-(int)DateTime.Now.DayOfWeek).ToString("M") - @DateTime.Now.AddDays(7 - (int)DateTime.Now.DayOfWeek).ToString("M") </div>
                 </div>
                 <div class="card-body pb-0">
                     <div class="mb-4 mt-2">
-                        <h1>$4,578.58</h1>
+                        <h1>@ViewBag.WeekSales.Today VNĐ</h1>
                     </div>
                     <div class="pull-in">
-                        <canvas id="dailySalesChart"></canvas>
+                        <canvas id="dailySalesChart"></canvas>@* weekSalesChart *@
                     </div>
                 </div>
             </div>
@@ -258,246 +229,18 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <div class="card card-round">
-                <div class="card-header">
-                    <div class="card-head-row card-tools-still-right">
-                        <h4 class="card-title">Users Geolocation</h4>
-                        <div class="card-tools">
-                            <button class="btn btn-icon btn-link btn-primary btn-xs">
-                                <span class="fa fa-angle-down"></span>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card">
-                                <span class="fa fa-sync-alt"></span>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-primary btn-xs">
-                                <span class="fa fa-times"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <p class="card-category">
-                        Map of the distribution of users around the world
-                    </p>
-                </div>
+        <div class="col-md-7">
+            <div class="card card-stats card-round">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="table-responsive table-hover table-sales">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/id.png"
-                                                         alt="indonesia" />
-                                                </div>
-                                            </td>
-                                            <td>Indonesia</td>
-                                            <td class="text-end">2.320</td>
-                                            <td class="text-end">42.18%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/us.png"
-                                                         alt="united states" />
-                                                </div>
-                                            </td>
-                                            <td>USA</td>
-                                            <td class="text-end">240</td>
-                                            <td class="text-end">4.36%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/au.png"
-                                                         alt="australia" />
-                                                </div>
-                                            </td>
-                                            <td>Australia</td>
-                                            <td class="text-end">119</td>
-                                            <td class="text-end">2.16%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/ru.png"
-                                                         alt="russia" />
-                                                </div>
-                                            </td>
-                                            <td>Russia</td>
-                                            <td class="text-end">1.081</td>
-                                            <td class="text-end">19.65%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/cn.png"
-                                                         alt="china" />
-                                                </div>
-                                            </td>
-                                            <td>China</td>
-                                            <td class="text-end">1.100</td>
-                                            <td class="text-end">20%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="flag">
-                                                    <img src="~/img/flags/br.png"
-                                                         alt="brazil" />
-                                                </div>
-                                            </td>
-                                            <td>Brasil</td>
-                                            <td class="text-end">640</td>
-                                            <td class="text-end">11.63%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mapcontainer">
-                                <div id="world-map"
-                                     class="w-100"
-                                     style="height: 300px"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <canvas id="StatusOrderStatsChart"></canvas>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card card-round">
-                <div class="card-body">
-                    <div class="card-head-row card-tools-still-right">
-                        <div class="card-title">New Customers</div>
-                        <div class="card-tools">
-                            <div class="dropdown">
-                                <button class="btn btn-icon btn-clean me-0"
-                                        type="button"
-                                        id="dropdownMenuButton"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu"
-                                     aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-list py-4">
-                        <div class="item-list">
-                            <div class="avatar">
-                                <img src="~/img/jm_denis.jpg"
-                                     alt="..."
-                                     class="avatar-img rounded-circle" />
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Jimmy Denis</div>
-                                <div class="status">Graphic Designer</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                        <div class="item-list">
-                            <div class="avatar">
-                                <span class="avatar-title rounded-circle border border-white">CF</span>
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Chandra Felix</div>
-                                <div class="status">Sales Promotion</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                        <div class="item-list">
-                            <div class="avatar">
-                                <img src="~/img/talha.jpg"
-                                     alt="..."
-                                     class="avatar-img rounded-circle" />
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Talha</div>
-                                <div class="status">Front End Designer</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                        <div class="item-list">
-                            <div class="avatar">
-                                <img src="~/img/chadengle.jpg"
-                                     alt="..."
-                                     class="avatar-img rounded-circle" />
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Chad</div>
-                                <div class="status">CEO Zeleaf</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                        <div class="item-list">
-                            <div class="avatar">
-                                <span class="avatar-title rounded-circle border border-white bg-primary">H</span>
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Hizrian</div>
-                                <div class="status">Web Designer</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                        <div class="item-list">
-                            <div class="avatar">
-                                <span class="avatar-title rounded-circle border border-white bg-secondary">F</span>
-                            </div>
-                            <div class="info-user ms-3">
-                                <div class="username">Farrah</div>
-                                <div class="status">Marketing</div>
-                            </div>
-                            <button class="btn btn-icon btn-link op-8 me-1">
-                                <i class="far fa-envelope"></i>
-                            </button>
-                            <button class="btn btn-icon btn-link btn-danger op-8">
-                                <i class="fas fa-ban"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
             <div class="card card-round">
                 <div class="card-header">
                     <div class="card-head-row card-tools-still-right">
-                        <div class="card-title">Transaction History</div>
+                        <div class="card-title">Lịch sử đơn hàng</div>
                         <div class="card-tools">
                             <div class="dropdown">
                                 <button class="btn btn-icon btn-clean me-0"
@@ -524,29 +267,71 @@
                         <table class="table align-items-center mb-0">
                             <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">Payment Number</th>
-                                    <th scope="col" class="text-end">Date & Time</th>
-                                    <th scope="col" class="text-end">Amount</th>
-                                    <th scope="col" class="text-end">Status</th>
+                                    <th scope="col">Mã đơn hàng</th>
+                                    <th scope="col" class="text-end">Ngày và Thời gian</th>
+                                    <th scope="col" class="text-end">Thành tiền</th>
+                                    <th scope="col" class="text-end">Tình trạng</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @* Note This Is Data Transaction History *@
-                                @foreach (var aTransation in ViewBag.TransactionHistory)
+                                @foreach (var aTransaction in ViewBag.TransactionHistory)
                                 {
                                     <tr>
                                         <th scope="row">
-                                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
-                                                <i class="fa fa-check"></i>
+                                            @{
+                                                string badgeClassBtn;
+                                                string iconClass;
+
+                                                switch (aTransaction.TinhTrang)
+                                                {
+                                                    case "Chờ thanh toán":
+                                                        badgeClassBtn = "btn-warning";
+                                                        iconClass = "fa-hourglass-half";
+                                                        break;
+                                                    case "Chuẩn bị hàng":
+                                                        badgeClassBtn = "btn-info";
+                                                        iconClass = "fa-box-open";
+                                                        break;
+                                                    case "Đang giao hàng":
+                                                        badgeClassBtn = "btn-primary";
+                                                        iconClass = "fa-shipping-fast";
+                                                        break;
+                                                    case "Chờ giao hàng":
+                                                        badgeClassBtn = "btn-secondary";
+                                                        iconClass = "fa-clock";
+                                                        break;
+                                                    case "Đã thanh toán":
+                                                        badgeClassBtn = "btn-success";
+                                                        iconClass = "fa-check";
+                                                        break;
+                                                    case "Đã hủy":
+                                                        badgeClassBtn = "btn-danger";
+                                                        iconClass = "fa-times";
+                                                        break;
+                                                    case "Hoàn trả/Hoàn tiền":
+                                                        badgeClassBtn = "btn-danger";
+                                                        iconClass = "fa-undo";
+                                                        break;
+                                                    default:
+                                                        badgeClassBtn = "btn-secondary";
+                                                        iconClass = "fa-question";
+                                                        break;
+                                                }
+                                            }
+
+                                            <button class="btn btn-icon btn-round @badgeClassBtn btn-sm me-2">
+                                                <i class="fa @iconClass"></i>
                                             </button>
-                                            Payment from #@aTransation.MaHoaDon
+
+                                            Đơn hàng từ #@aTransaction.MaHoaDon
                                         </th>
-                                        <td class="text-end">@aTransation.DTime</td>
-                                        <td class="text-end">@aTransation.TotalAmount</td>
+                                        <td class="text-end">@aTransaction.DTime</td>
+                                        <td class="text-end">@aTransaction.TotalAmount</td>
                                         <td class="text-end">
                                             @{
                                                 string badgeClass = "badge-black"; // Default class
-                                                switch (aTransation.TinhTrang)
+                                                switch (aTransaction.TinhTrang)
                                                 {
                                                     case "Chờ thanh toán":
                                                         badgeClass = "badge-warning";
@@ -571,9 +356,9 @@
                                                         break;
                                                 }
                                             }
-                                            <span class="badge @badgeClass">@aTransation.TinhTrang</span>
-
+                                            <span class="badge @badgeClass">@aTransaction.TinhTrang</span>
                                         </td>
+
                                     </tr>
                                 }
                             </tbody>
@@ -586,12 +371,27 @@
 </div>
 
 @section Scripts {
-    <script>
+    <script type="text/javascript">
         // Dữ liệu từ ViewBag
         const salesRevenueStat = [@ViewBag.SalesRevenueStat[0], @ViewBag.SalesRevenueStat[1], @ViewBag.SalesRevenueStat[2], @ViewBag.SalesRevenueStat[3]];
         const orderStat = [@ViewBag.OrderStat[0], @ViewBag.OrderStat[1], @ViewBag.OrderStat[2], @ViewBag.OrderStat[3]];
+        const statusOrder = [
+                @ViewBag.CountOrderByStatus.Total,
+                @ViewBag.CountOrderByStatus.WaitPayOrder,
+                @ViewBag.CountOrderByStatus.WrapOrder,
+                @ViewBag.CountOrderByStatus.DeliverOrder,
+                @ViewBag.CountOrderByStatus.WaitDeliverOrder,
+                @ViewBag.CountOrderByStatus.PayOrder,
+                @ViewBag.CountOrderByStatus.CancelOrder,
+                @ViewBag.CountOrderByStatus.BackOrder
+            ];
 
-        // Biểu đồ doanh thu bán hàng
+        const weekSalesData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.WeekSales.Week));
+
+        const labelsW = weekSalesData.map(data => data.NgayTao);
+        const dataW = weekSalesData.map(data => data.DoanhThu);
+
+
         const salesRevenueCtx = document.getElementById('salesRevenueChart').getContext('2d');
         new Chart(salesRevenueCtx, {
             type: 'bar',
@@ -636,5 +436,131 @@
                 }
             }
         });
+        // Biểu đồ thông kê đơn hàng theo tình trạng
+        const StatusOrderStatsChart = document.getElementById('StatusOrderStatsChart').getContext('2d');
+        new Chart(StatusOrderStatsChart, {
+            type: 'bar',
+            data: {
+                labels: ['Tổng đơn hàng', 'Chờ thanh toán', 'Chuẩn bị hàng', 'Đang giao hàng', 'Chờ giao hàng', 'Đã thanh toán', 'Đã hủy', 'Hoàn trả/Hoàn tiền'],
+                datasets: [{
+                    label: 'Số lượng đơn hàng',
+                    data: statusOrder,
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)', // Tổng đơn hàng
+                        'rgba(255, 173, 70, 0.2)', // Chờ thanh toán
+                        'rgba(72, 171, 247, 0.2)', // Chuẩn bị hàng
+                        'rgba(21, 114, 232, 0.2)', // Đang giao hàng
+                        'rgba(104, 97, 206, 0.2)', // Chờ giao hàng
+                        'rgba(49, 206, 54, 0.2)',  // Đã thanh toán
+                        'rgba(242, 89, 97, 0.2)',  // Đã hủy
+                        'rgba(242, 89, 97, 0.2)'   // Hoàn trả/Hoàn tiền
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',   // Tổng đơn hàng
+                        'rgba(255, 173, 70, 1)',   // Chờ thanh toán
+                        'rgba(72, 171, 247, 1)',   // Chuẩn bị hàng
+                        'rgba(21, 114, 232, 1)',   // Đang giao hàng
+                        'rgba(104, 97, 206, 1)',   // Chờ giao hàng
+                        'rgba(49, 206, 54, 1)',    // Đã thanh toán
+                        'rgba(242, 89, 97, 1)',    // Đã hủy
+                        'rgba(242, 89, 97, 1)'     // Hoàn trả/Hoàn tiền
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+
+
+        var dailySalesChart = document.getElementById('dailySalesChart').getContext('2d');
+
+        var myDailySalesChart = new Chart(dailySalesChart, {
+            type: 'line',
+            data: {
+                labels: ["January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September"],
+                datasets: [{
+                    label: "Sales Analytics", fill: !0, backgroundColor: "rgba(255,255,255,0.2)", borderColor: "#fff", borderCapStyle: "butt", borderDash: [], borderDashOffset: 0, pointBorderColor: "#fff", pointBackgroundColor: "#fff", pointBorderWidth: 1, pointHoverRadius: 5, pointHoverBackgroundColor: "#fff", pointHoverBorderColor: "#fff", pointHoverBorderWidth: 1, pointRadius: 1, pointHitRadius: 5, data: [65, 59, 80, 81, 56, 55, 40, 35, 30]
+                }]
+            },
+            options: {
+                maintainAspectRatio: !1, legend: {
+                    display: !1
+                }
+                , animation: {
+                    easing: "easeInOutBack"
+                }
+                , scales: {
+                    yAxes: [{
+                        display: !1, ticks: {
+                            fontColor: "rgba(0,0,0,0.5)", fontStyle: "bold", beginAtZero: !0, maxTicksLimit: 10, padding: 0
+                        }
+                        , gridLines: {
+                            drawTicks: !1, display: !1
+                        }
+                    }
+                    ], xAxes: [{
+                        display: !1, gridLines: {
+                            zeroLineColor: "transparent"
+                        }
+                        , ticks: {
+                            padding: -20, fontColor: "rgba(255,255,255,0.2)", fontStyle: "bold"
+                        }
+                    }
+                    ]
+                }
+            }
+        });
+        // Biểu đồ thông kê doanh thu tuần
+        // const weekSalesChartElement = document.getElementById('weekSalesChart').getContext('2d');
+        // new Chart(weekSalesChartElement, {
+        //     type: 'line',
+        //     data: {
+        //         labels: labelsW,
+        //         datasets: [{
+        //             label: 'Doanh thu tuần',
+        //             data: dataW,
+        //             borderColor: 'rgba(0, 0, 0, 0)', Ẩn đường
+        //             pointRadius: 0, Ẩn điểm trên đường
+        //             borderWidth: 0 Ẩn viền
+        //         }]
+        //     },
+        //     options: {
+        //         scales: {
+        //             y: {
+        //                 display: false Ẩn trục y
+        //             }
+        //         },
+        //         plugins: {
+        //             tooltip: {
+        //                 callbacks: {
+        //                     title: function (tooltipItems) {
+        //                         return tooltipItems[0].label; Hiển thị nhãn khi hover
+        //                     },
+        //                     label: function (tooltipItem) {
+        //                         return 'Doanh thu: ' + tooltipItem.raw.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
+
+
+
     </script>
 }
