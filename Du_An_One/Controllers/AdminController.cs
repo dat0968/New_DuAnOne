@@ -50,7 +50,7 @@ namespace Du_An_One.Controllers
                 .Where(hd => hd.TinhTrang == "Đã thanh toán" && hd.NgayTao.Date >= NgayDauTuan.Date && hd.NgayTao.Date <= NgayCuoiTuan.Date)
                 .Select(hd => new { hd.MaHoaDon, hd.NgayTao })
                 .OrderBy(hd => hd.NgayTao).ToList();
-/*
+
             var weekSales = _context.CHITIETHOADON
                 .AsEnumerable()
                 .Join(listCodeOrderWeek, ct => ct.MaHoaDon, lcw => lcw.MaHoaDon, (ct, lcw) => new
@@ -60,19 +60,19 @@ namespace Du_An_One.Controllers
                     lcw.NgayTao
                 })
                 .AsEnumerable()
-                .GroupBy(g =>new { g.NgayTao.Date })
+                .GroupBy(g => new { g.NgayTao.Date })
                 .Select(g => new
                 {
                     NgayTao = g.Key.Date.ToString("yyyy-MM-dd"),
-                    DoanhThu = Math.Round(g.Sum(x => x.DoanhThu),2)
+                    DoanhThu = Math.Round(g.Sum(x => x.DoanhThu), 2)
                 }).ToList();
-*/
+
             ViewBag.WeekSales = new
             {
                 Today = _context.CHITIETHOADON
                     .Where(ct => listCodeOrderToday.Contains(ct.MaHoaDon))
                     .Sum(ct => ct.SoLuongMua * ct.DonGia),
-                //Week = weekSales
+                Week = weekSales
             };
 
             #endregion
