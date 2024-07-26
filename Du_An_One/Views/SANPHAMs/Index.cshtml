@@ -91,7 +91,7 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    var img = item.HinhAnh.Length < 10 ? "~/img/productImage/default.jpg" : "~/img/productImage/" + item.HinhAnh;
+                    var img = item.HinhAnh == null ? "~/img/productImage/default.jpg" : "~/img/productImage/" + item.HinhAnh;
                     <tr>
                         <td>@Html.DisplayFor(modelItem => item.TenSP)</td>
                         <td>@Html.DisplayFor(modelItem => item.SoLuongBan)</td>
@@ -104,9 +104,10 @@
                         <td>@Html.DisplayFor(modelItem => item.MoTa)</td>
                         <td>
                             <a asp-action="Edit" asp-route-MaSP="@item.MaSP" class="btn btn-sm btn-info">Sửa</a> |
-                            <a asp-action="Details" asp-route-MaSP="@item.MaSP" class="btn btn-sm btn-primary">Chi tiết</a> |
-                            <a asp-action="Delete" asp-route-id="@item.MaSP" class="btn btn-sm btn-danger">Xóa</a>
+                            <a asp-route-MaSP="@item.MaSP" id="@item.MaSP" class="btn btn-sm btn-primary showDetailsButton">Chi tiết</a> |
+                            <a asp-action="Delete" asp-route-id="@item.MaSP" class="btn btn-sm btn-danger"> Xóa</a>
                         </td>
+                         @* <-- asp-action="Details" --> *@
                     </tr>
                 }
             </tbody>
@@ -123,3 +124,30 @@
     LiElementClasses = new List<string> { "page-item" },
     PageClasses = new List<string> { "page-link" }
 })
+<div id="contentThumbnail" class="justify-content-center align-items-center position-fixed w-100 h-100" style="display: none; z-index: 1000; top: 0; overflow: auto; background-color: rgba(0, 0, 0, 0.8);" onclick="if(event.target == this) document.getElementById('contentThumbnail').style.display = 'none'">
+</div>
+@section Scripts {
+    <script>
+        // Bắt sự kiện click của nút và gửi yêu cầu AJAX
+        document.querySelectorAll(".showDetailsButton").forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+
+                // Gửi yêu cầu AJAX để lấy nội dung của trang detailsthumbnail
+                var xhr = new XMLHttpRequest();
+                var ourMaSPValue = this.getAttribute("id");
+                xhr.open("GET", `/SANPHAMs/DetailsViewThubnail?MaSP=${ourMaSPValue}`, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            // Nếu yêu cầu thành công, thay đổi nội dung của một phần tử có ID là "contentThumbnail" bằng nội dung trả về từ trang detailsthumbnail
+                            document.getElementById("contentThumbnail").innerHTML = xhr.responseText;
+                            document.getElementById("contentThumbnail").style.display = 'grid';                            
+                        }
+                    }
+                };
+                xhr.send();
+            });
+        });
+    </script>
+}
