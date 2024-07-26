@@ -211,8 +211,11 @@ namespace Du_An_One.Controllers
 
                 return RedirectToAction("Index", "Login");
             }
-
-            return View(model);
+            else
+            {
+                TempData["rePass"] = "Vui lòng nhập lại đúng mật khẩu";
+                return View(model);
+            }
         }
 
         public IActionResult ForgotPassword()

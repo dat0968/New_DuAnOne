@@ -9,7 +9,7 @@
 
 @foreach (var oneProduct in Model)
 {
-    var img = oneProduct.HinhAnh.Length < 10 ? "~/img/productImage/default.jpg" : "~/img/productImage/" + oneProduct.HinhAnh;
+    var img = (oneProduct?.HinhAnh?.Length ?? 0) < 10 ? "~/img/productImage/default.jpg" : "~/img/productImage/" + oneProduct.HinhAnh;
 
     <div class="bg-white p-4 rounded-lg shadow-lg">
         <img src="@Url.Content(img)" alt="@oneProduct.TenSP"

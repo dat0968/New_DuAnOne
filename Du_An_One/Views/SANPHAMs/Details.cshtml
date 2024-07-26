@@ -37,6 +37,8 @@
             margin: auto;
             display: block;
             width: 80%;
+            height: 100%;
+            object-fit: contain;
             max-width: 700px;
         }
 
@@ -60,35 +62,33 @@
 }
 
 <h1>Chi Tiết Sản Phẩm</h1>
-
-<!-- View Detail Product For Admin -->
-<div style="justify-content: space-evenly;">
+<div class="card-body p-0">
     <div class="row">
         <div class="col-md-6">
-            <h4>Sản Phẩm</h4>
+            <h4 class="card-title">Sản Phẩm</h4>
             <hr />
-            <dl>
-                <dt>Mã Sản Phẩm</dt>
-                <dd>@Model.MaSP</dd>
-                <dt>Tên Sản Phẩm</dt>
-                <dd>@Model.TenSP</dd>
-                <dt>Số Lượng Bán</dt>
-                <dd>@Model.SoLuongBan</dd>
-                <dt>Đơn Giá Bán</dt>
-                <dd>@Model.DonGiaBan</dd>
-                <dt>Ngày Nhập</dt>
-                <dd>@Model.NgayNhap.ToString("dd/MM/yyyy")</dd>
-                <dt>Danh Mục Hàng</dt>
-                <dd>@Model.DanhMucHang</dd>
-                <dt>Kích cỡ</dt>
-                <dd>@Model.KichCo</dd>
-                <dt>Mô Tả</dt>
-                <dd>@Model.MoTa</dd>
+            <dl class="row">
+                <dt class="col-sm-4">Mã Sản Phẩm</dt>
+                <dd class="col-sm-8">@Model.MaSP</dd>
+                <dt class="col-sm-4">Tên Sản Phẩm</dt>
+                <dd class="col-sm-8">@Model.TenSP</dd>
+                <dt class="col-sm-4">Số Lượng Bán</dt>
+                <dd class="col-sm-8">@Model.SoLuongBan</dd>
+                <dt class="col-sm-4">Đơn Giá Bán</dt>
+                <dd class="col-sm-8">@Model.DonGiaBan</dd>
+                <dt class="col-sm-4">Ngày Nhập</dt>
+                <dd class="col-sm-8">@Model.NgayNhap.ToString("dd/MM/yyyy")</dd>
+                <dt class="col-sm-4">Danh Mục Hàng</dt>
+                <dd class="col-sm-8">@Model.DanhMucHang</dd>
+                <dt class="col-sm-4">Kích cỡ</dt>
+                <dd class="col-sm-8">@Model.KichCo</dd>
+                <dt class="col-sm-4">Mô Tả</dt>
+                <dd class="col-sm-8">@Model.MoTa</dd>
                 <!-- Bạn có thể thêm các trường khác tương ứng với các thuộc tính của Sanpham -->
             </dl>
         </div>
-        <div class="col-md-5">
-            <h4>Hình ảnh sản phẩm</h4>
+        <div class="col-md-6">
+            <h4 class="card-title">Hình ảnh sản phẩm</h4>
             <hr />
 
             <div class="container" style="
@@ -97,19 +97,20 @@
                     width: 100%;
                     margin: 0 auto;">
 
-                <img data-imgbigurl="@Url.Content(Model.HinhAnh)" src="@Url.Content(Model.HinhAnh)" alt="" class="image-large object-contain" style="
+                <img data-imgbigurl="@Url.Content(Model.HinhAnh)" src="@Url.Content(Model.HinhAnh)" alt="" class="img-fluid mb-3" style="
                     width: 100%;
                     height: auto;" onclick="openModal(this)">
                 <div class="gallery">
                     @foreach (var aImage in ViewBag.anhSanPham)
                     {
-                        <img data-imgbigurl="@Url.Content("~/img/productImage/" + aImage)" src="@Url.Content("~/img/productImage/" + aImage)" alt="Image 1" onclick="openModal(this)">
+                        <img data-imgbigurl="@Url.Content("~/img/productImage/" + aImage)" src="@Url.Content("~/img/productImage/" + aImage)" alt="Image 1" class="img-thumbnail m-1" onclick="openModal(this)">
                     }
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <div id="myModal" class="modal" onclick="closeModal(event)">
     @* <span class="close" onclick="closeModal()">&times;</span> *@
     <img class="modal-content" id="img01">

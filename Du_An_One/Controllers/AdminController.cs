@@ -2,7 +2,7 @@
 using Du_An_One.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Text.RegularExpressions;
 namespace Du_An_One.Controllers
 {
     [Authorize]
@@ -12,8 +12,9 @@ namespace Du_An_One.Controllers
         public AdminController(Du_An_OneContext context) { 
             _context = context;
         }
-        public IActionResult TongQuan()
+        public IActionResult TongQuan(string? MaNV = "")
         {
+            #region//Thống kê đơn giản
             ViewBag.CountData = new
             {
                 Users = _context.KHACHHANG.Count(),
@@ -22,7 +23,60 @@ namespace Du_An_One.Controllers
                 Sales = 666,
                 FinishOrder = _context.HOADON.Count(hd => hd.TinhTrang == "Đã thanh toán")
             };
+            #endregion
 
+            #region//Thống kê theo tình trạng hóa đơn
+            ViewBag.CountOrderByStatus = new
+            {
+                Total = _context.HOADON.Count(),
+                WaitPayOrder = _context.HOADON.Count(h => h.TinhTrang == "Chờ thanh toán"),
+                WrapOrder = _context.HOADON.Count(h => h.TinhTrang == "Chuẩn bị hàng"),
+                DeliverOrder = _context.HOADON.Count(h => h.TinhTrang == "Đang giao hàng"),
+                WaitDeliverOrder = _context.HOADON.Count(h => h.TinhTrang == "Chờ giao hàng"),
+                PayOrder = _context.HOADON.Count(h => h.TinhTrang == "Đã thanh toán"),
+                CancelOrder = _context.HOADON.Count(h => h.TinhTrang == "Đã hủy"),
+                BackOrder = _context.HOADON.Count(h => h.TinhTrang == "Hoàn trả/Hoàn tiền")
+            };
+            #endregion
+
+            #region//Thống kê doanh thu theo ngày
+            string?[] listCodeOrderToday = _context.HOADON
+                .Where(hd => hd.TinhTrang == "Đã thanh toán" && hd.NgayTao.Date == DateTime.Now.Date)
+                .Select(hd => hd.MaHoaDon).ToArray();
+            DateTime NgayDauTuan = DateTime.Now.AddDays(-(int)DateTime.Now.DayOfWeek);
+            DateTime NgayCuoiTuan = DateTime.Now.AddDays(7 - (int)DateTime.Now.DayOfWeek);
+            var listCodeOrderWeek = _context.HOADON
+                .Where(hd => hd.TinhTrang == "Đã thanh toán" && hd.NgayTao.Date >= NgayDauTuan.Date && hd.NgayTao.Date <= NgayCuoiTuan.Date)
+                .Select(hd => new { hd.MaHoaDon, hd.NgayTao })
+                .OrderBy(hd => hd.NgayTao).ToList();
+
+            var weekSales = _context.CHITIETHOADON
+                .AsEnumerable()
+                .Join(listCodeOrderWeek, ct => ct.MaHoaDon, lcw => lcw.MaHoaDon, (ct, lcw) => new
+                {
+                    lcw.MaHoaDon,
+                    DoanhThu = ct.SoLuongMua * ct.DonGia,
+                    lcw.NgayTao
+                })
+                .AsEnumerable()
+                .GroupBy(g => new { g.NgayTao.Date })
+                .Select(g => new
+                {
+                    NgayTao = g.Key.Date.ToString("yyyy-MM-dd"),
+                    DoanhThu = Math.Round(g.Sum(x => x.DoanhThu), 2)
+                }).ToList();
+
+            ViewBag.WeekSales = new
+            {
+                Today = _context.CHITIETHOADON
+                    .Where(ct => listCodeOrderToday.Contains(ct.MaHoaDon))
+                    .Sum(ct => ct.SoLuongMua * ct.DonGia),
+                Week = weekSales
+            };
+
+            #endregion
+
+            #region//Thống kê tình trạng các hóa đơn gần đây
             ViewBag.TransactionHistory = _context.HOADON
                 .OrderByDescending(x => x.NgayTao)
                 .Take(7)
@@ -35,19 +89,18 @@ namespace Du_An_One.Controllers
                         Amount = ct.SoLuongMua * ct.DonGia,
                         hd.TinhTrang
                     }))
-                .GroupBy(item => new { item.MaHoaDon, item.DTime, item.TinhTrang})
+                .GroupBy(item => new { item.MaHoaDon, item.DTime, item.TinhTrang })
                 .Select(group => new
                 {
                     MaHoaDon = group.Key.MaHoaDon,
                     DTime = group.Key.DTime,
-                    TotalAmount = Math.Round(group.Sum(g => g.Amount),2),
+                    TotalAmount = Math.Round(group.Sum(g => g.Amount), 2),
                     TinhTrang = group.Key.TinhTrang
                 });
-            return View();
-        }
+            #endregion
 
-        public IActionResult ThongKe(string findData)
-        {
+            //Thong Ke
+
             int thisMonth = DateTime.Now.Month;
             int thisYear = DateTime.Now.Year;
             ViewBag.CustomerStat = new int[]
@@ -76,7 +129,7 @@ namespace Du_An_One.Controllers
                 _context.HOADON.Count(h => h.NgayTao.Year == thisYear && h.TinhTrang.Contains("Đã thanh toán")),
             };
             var HOADON = _context.HOADON
-                .Where(h => h.TinhTrang.Contains("Đã thanh toán"))
+                .Where(h => h.TinhTrang.Contains("Đã thanh toán") && h.MaNV.Contains(MaNV))
                 .GroupBy(h => new { h.MaHoaDon, h.MaNV })
                 .Select(g => new
                 {
@@ -119,10 +172,6 @@ namespace Du_An_One.Controllers
                     TotalAmount = e.Sum(x => x.SoLuongMua * x.DonGia)
                 })
                 .ToList();
-            /*foreach (var item in employeeStats)
-            {
-                Console.WriteLine(item.MaNV + item.HoTen + item.NumOrder + item.TotalAmount);
-            }*/
             ViewBag.EmployeeStat = employeeStats;
             return View();
         }
@@ -219,7 +268,7 @@ namespace Du_An_One.Controllers
         public IActionResult DanhSachHoaDonCuaNhanVien(string MaNV)
         {
             var listCodeCheckOfStaff = _context.HOADON
-                .Where(x => x.MaNV == MaNV)
+                .Where(x => x.MaNV == MaNV && x.TinhTrang.Contains("Đã thanh toán"))
                 .Select(x => new { x.MaHoaDon, x.NgayTao })
                 .ToList();
             ViewBag.DuLieuHomNay = listCodeCheckOfStaff
@@ -239,8 +288,8 @@ namespace Du_An_One.Controllers
                     TongTien = Math.Round(group.Sum(g => g.Tien), 2)
                 })
                 .ToList();//Note
-                /*.Join(_context.CHITIETHOADON, h => h.MaHoaDon, ct => ct.MaHoaDon, (h, ct) => new { SoHoaDon = h.MaHoaDon.Count(), TongTien = (ct.SoLuongMua * ct.DonGia) })
-                .ToList();*/
+            /*.Join(_context.CHITIETHOADON, h => h.MaHoaDon, ct => ct.MaHoaDon, (h, ct) => new { SoHoaDon = h.MaHoaDon.Count(), TongTien = (ct.SoLuongMua * ct.DonGia) })
+            .ToList();*/
             ViewBag.DuLieuTruocDo = listCodeCheckOfStaff.Where(x => x.NgayTao.Date != DateTime.Now.Date).Join(_context.CHITIETHOADON, h => h.MaHoaDon, ct => ct.MaHoaDon, (h, ct) => new { h, ct }).GroupBy(g => g.h.NgayTao.Date).Select(x => new { Ngay = x.Key, SoHoaDon = x.Count(), TongTien = x.Sum(y => y.ct.SoLuongMua * y.ct.DonGia) }).OrderByDescending(x => x.Ngay).ToList();
 
             return View(_context.NHANVIEN.First(x => x.MaNV == MaNV));

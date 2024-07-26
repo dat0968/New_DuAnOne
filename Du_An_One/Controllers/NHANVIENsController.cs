@@ -123,43 +123,22 @@ namespace Du_An_One.Controllers
         }
 
         // GET: NHANVIENs/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        [HttpPost]
+        public async Task<IActionResult> Delete(string maNV)
         {
-            if (id == null || _context.NHANVIEN == null)
+            var product = await _context.NHANVIEN.FindAsync(maNV);
+            if (product != null)
             {
-                return NotFound();
+                product.TinhTrang = "Khoas";
+                _context.NHANVIEN.Update(product);
+                await _context.SaveChangesAsync();
             }
-
-            var nHHANVIEN = await _context.NHANVIEN
-                .FirstOrDefaultAsync(m => m.MaNV == id);
-            if (nHHANVIEN == null)
-            {
-                return NotFound();
-            }
-
-            return View(nHHANVIEN);
-        }
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
-        {
-            if (_context.NHANVIEN == null)
-            {
-                return Problem("Entity set 'Du_An_OneContext.NHANVIEN'  is null.");
-            }
-            var nHANVIEN = await _context.NHANVIEN.FindAsync(id);
-            if (nHANVIEN != null)
-            {
-                _context.NHANVIEN.Remove(nHANVIEN);
-            }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        private bool NHANVIENExists(string id)
+        private bool ProductExists(string maNV)
         {
-            return (_context.NHANVIEN?.Any(e => e.MaNV == id)).GetValueOrDefault();
+            return _context.NHANVIEN.Any(e => e.MaNV == maNV);
         }
-      
+
     }
 }

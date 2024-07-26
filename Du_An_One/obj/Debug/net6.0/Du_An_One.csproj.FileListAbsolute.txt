@@ -835,7 +835,6 @@ C:\Users\ADMIN\source\repos\New_DuAnOne\Du_An_One\bin\Debug\net6.0\Irony.dll
 C:\Users\ADMIN\source\repos\New_DuAnOne\Du_An_One\bin\Debug\net6.0\SixLabors.Fonts.dll
 C:\Users\ADMIN\source\repos\New_DuAnOne\Du_An_One\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\Users\ADMIN\source\repos\New_DuAnOne\Du_An_One\bin\Debug\net6.0\XLParser.dll
-D:\DuAnOnenew\Du_An_One\bin\Debug\net6.0\appsettings.Development.json
 D:\DuAnOnenew\Du_An_One\bin\Debug\net6.0\appsettings.json
 D:\DuAnOnenew\Du_An_One\bin\Debug\net6.0\Du_An_One.staticwebassets.runtime.json
 D:\DuAnOnenew\Du_An_One\bin\Debug\net6.0\Du_An_One.exe
