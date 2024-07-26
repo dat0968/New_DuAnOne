@@ -61,12 +61,10 @@
                         <td><a type="button" class="btn btn-primary editButton"  asp-action="Edit" asp-route-id="@nhanvien.MaNV"><i class="bi bi-pencil"></i></a></td>
 
                         <!-- Xóa -->
-    <td>
-                    <form asp-action="Delete" method="post">
-       <a type="button" class="btn btn-danger btn-sm" asp-route-id="@nhanvien.MaNV">Delete</a>
-                    </form>
-    </td>
-
+                         <td>
+                            <a type="button" class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@nhanvien.MaNV">Delete</a>
+                         </td>
+        
 
 
                     </tr>

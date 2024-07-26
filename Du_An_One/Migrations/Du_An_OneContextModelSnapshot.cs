@@ -369,6 +369,10 @@ namespace Du_An_One.Migrations
                     b.Property<double>("DonGiaBan")
                         .HasColumnType("float");
 
+                    b.Property<string>("HinhAnh")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("KHUYENMAIMaKhuyenMai")
                         .HasColumnType("nvarchar(5)");
 

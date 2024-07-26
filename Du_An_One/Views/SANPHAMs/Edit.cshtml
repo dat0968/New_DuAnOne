@@ -14,7 +14,7 @@
     <div class="col-md-4">
         <form method="post" asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MaSP" />
+            <input type="text" readonly asp-for="MaSP" />
             <div class="form-group">
                 <label asp-for="TenSP" class="control-label">Tên sản phẩm</label>
                 <input asp-for="TenSP" class="form-control" />

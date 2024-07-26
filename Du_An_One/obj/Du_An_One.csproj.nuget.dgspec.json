@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Du_An_One.csproj": {}
+    "E:\\DuAnOnenew\\Du_An_One\\Du_An_One.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Du_An_One.csproj": {
+    "E:\\DuAnOnenew\\Du_An_One\\Du_An_One.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Du_An_One.csproj",
+        "projectUniqueName": "E:\\DuAnOnenew\\Du_An_One\\Du_An_One.csproj",
         "projectName": "Du_An_One",
-        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Du_An_One.csproj",
+        "projectPath": "E:\\DuAnOnenew\\Du_An_One\\Du_An_One.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\obj\\",
+        "outputPath": "E:\\DuAnOnenew\\Du_An_One\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "ClosedXML": {
               "target": "Package",
               "version": "[0.102.3, )"
+            },
+            "Microsoft.AspNetCore.Server.Kestrel.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

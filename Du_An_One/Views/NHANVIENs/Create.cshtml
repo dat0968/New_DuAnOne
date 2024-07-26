@@ -71,10 +71,16 @@
         <label for="exampleInputPassword1">Mật khẩu</label>
         <input asp-for="MatKhau" type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
     </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Tình trạng</label>
-        <input asp-for="TinhTrang" type="text" class="form-control" id="exampleInputPassword1" placeholder="Tình trạng">
-    </div>
+        <div class="form-group">
+            <label>Tình trạng</label>
+            <div class="form-group">
+                <select asp-for="TinhTrang" class="form-select" aria-label="Default select example">
+                    <option selected>Chọn tình trạng</option>
+                    <option value="Mở">Mở</option>
+                    <option value="Khóa">Khóa</option>
+                </select>
+            </div>
+        </div>
 
 
     <button type="submit" class="btn btn-primary">Thêm nhân viên</button>

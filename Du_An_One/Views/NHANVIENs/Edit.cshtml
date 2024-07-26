@@ -68,7 +68,13 @@
             </div>
             <div class="form-group">
                 <label for="VaiTro">Vai trò</label>
-                <input asp-for="VaiTro" type="text" class="form-control" />
+                    <div class="form-group">
+                        <select asp-for="VaiTro" class="form-select" aria-label="Default select example">
+                            <option selected>Chọn vai trò</option>
+                            <option value="Quản lý">Quản lý</option>
+                            <option value="Nhân viên">Nhân viên</option>
+                        </select>
+                    </div>
                 @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
@@ -83,7 +89,13 @@
             </div>
             <div class="form-group">
                 <label for="TinhTrang">Tình trạng</label>
-                <input asp-for="TinhTrang" type="text" class="form-control" />
+                    <div class="form-group">
+                        <select asp-for="TinhTrang" class="form-select" aria-label="Default select example">
+                            <option selected>Chọn tình trạng</option>
+                            <option value="Mở">Mở</option>
+                            <option value="Khóa">Khóa</option>
+                        </select>
+                    </div>
                 @Html.ValidationMessageFor(model => model.TinhTrang, "", new { @class = "text-danger" })
             </div>
         </div>
