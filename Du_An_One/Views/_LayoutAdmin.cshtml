@@ -19,9 +19,13 @@
     <title>Trang chủ admin</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
           name="viewport" />
+    @await RenderSectionAsync("head", required: false)
     <link rel="icon"
           href="~/img/kaiadmin/favicon.ico"
           type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts and icons -->
     <script src="~/js/plugin/webfont/webfont.min.js"></script>
@@ -31,8 +35,6 @@
     <link rel="stylesheet" href="~/css/plugins.min.css" />
     <link rel="stylesheet" href="~/css/kaiadmin.min.css" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="~/css/demo.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -470,6 +472,5 @@
     <script src="~/js/kaiadmin.min.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-    @await RenderSectionAsync("head", required: false)
 </body>
 </html>

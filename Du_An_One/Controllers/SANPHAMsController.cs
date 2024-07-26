@@ -91,7 +91,7 @@ namespace Du_An_One.Controllers
         public async Task<IActionResult> Details(string MaSP)
         {
             var sanPham = _context.SANPHAM.SingleOrDefault(x => x.MaSP == MaSP);
-            if (sanPham.HinhAnh.Length > 10)
+            if (sanPham.HinhAnh != null)
             {
                 sanPham.HinhAnh = "~/img/productImage/" + sanPham.HinhAnh;
             }
@@ -101,6 +101,23 @@ namespace Du_An_One.Controllers
             }
             ViewBag.anhSanPham = _context.HINHANH.Where(x => x.MaSP == MaSP).Select(x => x.HinhAnh).ToList();
             return View(sanPham);
+        }
+        #endregion
+
+        #region//Hiển thị thumbnail chi tiết sản phẩm
+        public IActionResult DetailsViewThubnail(string MaSP)
+        {
+            var sanPham = _context.SANPHAM.SingleOrDefault(x => x.MaSP == MaSP);
+            if (sanPham.HinhAnh != null)
+            {
+                sanPham.HinhAnh = "~/img/productImage/" + sanPham.HinhAnh;
+            }
+            else
+            {
+                sanPham.HinhAnh = "~/img/productImage/default.jpg";
+            }
+            ViewBag.anhSanPham = _context.HINHANH.Where(x => x.MaSP == MaSP).Select(x => x.HinhAnh).ToList();
+            return PartialView(sanPham);
         }
         #endregion
 
