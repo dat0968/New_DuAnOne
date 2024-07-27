@@ -3,11 +3,35 @@
   "WorkspaceRootPath": "G:\\check\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\views\\shared\\_templayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\shared\\_templayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+=======
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\shared\\_templayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\shared\\_templayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\css\\kaiadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\css\\kaiadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\sanphams\\detailsviewthubnail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\sanphams\\detailsviewthubnail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,12 +39,129 @@
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\views\\shared\\_templayout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\shared\\_templayout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\nhanvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\home\\temp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\home\\temp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\admin\\tongquan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\admin\\tongquan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\css\\demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\css\\demo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\hinhanhscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\hinhanhscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\hinhanhs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\hinhanhs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\admin\\danhsachhoadoncuanhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\admin\\danhsachhoadoncuanhanvien.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\chitiethoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\chitiethoadonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\js\\demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\login\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\js\\plugin\\chart.js\\chart.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\js\\plugin\\chart.js\\chart.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\js\\core\\bootstrap.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\js\\core\\bootstrap.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\login\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\login\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\css\\style_lrf.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\css\\style_lrf.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\controllers\\nhacungcapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\nhacungcapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\sanphams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\sanphams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\sanphams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\sanphams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\js\\setting-demo2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\js\\setting-demo2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\wwwroot\\js\\setting-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\wwwroot\\js\\setting-demo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
     },
     {
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,6 +172,7 @@
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\admin\\tongquan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,6 +183,37 @@
     {
       "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|g:\\check\\du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\.vs\\New_DuAnOne\\v17\\DocumentLayout.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\New_DuAnOne\\v17\\DocumentLayout.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|c:\\users\\admin\\source\\repos\\new_duanone\\du_an_one\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48160FA3-1C9E-40A7-B75C-DC8BA6F5D3B6}|Du_An_One\\Du_An_One.csproj|solutionrelative:du_an_one\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
     }
   ],
   "DocumentGroupContainers": [
@@ -49,6 +222,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
@@ -63,10 +237,90 @@
               "ViewState": "AgIAADkCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-27T03:20:22.75Z",
+=======
+          "DockedWidth": 387,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAJMBAAAAAAAAAAAqwKYBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:54:37.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "kaiadmin.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\kaiadmin.css",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\css\\kaiadmin.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\kaiadmin.css",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\css\\kaiadmin.css",
+              "ViewState": "AgIAACoNAAAAAAAAAADwvzsNAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-23T07:17:15.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_TempLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Shared\\_TempLayout.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Shared\\_TempLayout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Shared\\_TempLayout.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Shared\\_TempLayout.cshtml",
+              "ViewState": "AgIAAAABAAAAAAAAAAAAAEwBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T02:25:05.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T11:56:25.336Z",
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "G:\\check\\Du_An_One\\Views\\_LayoutAdmin.cshtml",
@@ -172,6 +426,519 @@
               "ViewState": "AgIAAOwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-27T02:44:56.023Z"
+=======
+              "DocumentIndex": 4,
+              "Title": "DetailsViewThubnail.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\DetailsViewThubnail.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\DetailsViewThubnail.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\DetailsViewThubnail.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\DetailsViewThubnail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T09:11:07.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Details.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Details.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\Details.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAkwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:24:29.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Index.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\Index.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAH4AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:48:00.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SANPHAMsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\SANPHAMsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwHcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:00.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SANPHAM.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Models\\SANPHAM.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Models\\SANPHAM.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Models\\SANPHAM.cs",
+              "RelativeToolTip": "Du_An_One\\Models\\SANPHAM.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T11:54:38.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Create.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\Create.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T11:55:13.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NHANVIENsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\NHANVIENsController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:04.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TongQuan.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Admin\\TongQuan.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Admin\\TongQuan.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Admin\\TongQuan.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Admin\\TongQuan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T06:36:42.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "demo.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\demo.css",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\css\\demo.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\demo.css",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\css\\demo.css",
+              "ViewState": "AgIAABEBAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-26T02:19:48.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Temp.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Home\\Temp.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Home\\Temp.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Home\\Temp.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Home\\Temp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-26T02:29:07.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIBJwBgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:12:15.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DanhSachHoaDonCuaNhanVien.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Admin\\DanhSachHoaDonCuaNhanVien.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Admin\\DanhSachHoaDonCuaNhanVien.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Admin\\DanhSachHoaDonCuaNhanVien.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Admin\\DanhSachHoaDonCuaNhanVien.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T09:27:49.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HINHANHsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\HINHANHsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\HINHANHsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\HINHANHsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\HINHANHsController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T14:12:00.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CHITIETHOADONsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\CHITIETHOADONsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\CHITIETHOADONsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\CHITIETHOADONsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\CHITIETHOADONsController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T14:10:25.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\HINHANHs\\Create.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\HINHANHs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\HINHANHs\\Create.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\HINHANHs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T17:09:33.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "bootstrap-grid.rtl.css.map",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABzyAEAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-25T14:03:30.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "demo.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\demo.js",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\js\\demo.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\demo.js",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\js\\demo.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T07:30:05.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "bootstrap-grid.css.map",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABwyAEAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-25T14:02:15.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAIBJwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:09:56.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\Register.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Login\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\Register.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Login\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:04:21.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "chart.min.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\plugin\\chart.js\\chart.min.js",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\js\\plugin\\chart.js\\chart.min.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\plugin\\chart.js\\chart.min.js",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\js\\plugin\\chart.js\\chart.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAEgAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T06:40:01.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "bootstrap.min.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\core\\bootstrap.min.js",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\js\\core\\bootstrap.min.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\core\\bootstrap.min.js",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\js\\core\\bootstrap.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T07:13:31.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Login\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Login\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAIBZwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:03:59.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAuwNYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:11:36.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAACBjwCUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T12:04:16.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Du_An_One\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:14:16.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "style_LRF.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\style_LRF.css",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\css\\style_LRF.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\css\\style_LRF.css",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\css\\style_LRF.css",
+              "ViewState": "AgIAAEwAAAAAAAAAACBjwG0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-24T03:50:59.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NHACUNGCAPsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "RelativeToolTip": "Du_An_One\\Controllers\\NHACUNGCAPsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:31:06.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Edit.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAEBVwBAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:41:30.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\SANPHAMs\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\SANPHAMs\\Delete.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\SANPHAMs\\Delete.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAIBpwEgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:36:57.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "setting-demo2.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\setting-demo2.js",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\js\\setting-demo2.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\setting-demo2.js",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\js\\setting-demo2.js",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAqwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T07:15:24.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "setting-demo.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\setting-demo.js",
+              "RelativeDocumentMoniker": "Du_An_One\\wwwroot\\js\\setting-demo.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\wwwroot\\js\\setting-demo.js",
+              "RelativeToolTip": "Du_An_One\\wwwroot\\js\\setting-demo.js",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T07:15:02.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20240719074722_createtable.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Migrations\\20240719074722_createtable.Designer.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Migrations\\20240719074722_createtable.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Migrations\\20240719074722_createtable.Designer.cs",
+              "RelativeToolTip": "Du_An_One\\Migrations\\20240719074722_createtable.Designer.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAIBpwI8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T17:09:05.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240719074722_createtable.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Migrations\\20240719074722_createtable.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Migrations\\20240719074722_createtable.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Migrations\\20240719074722_createtable.cs",
+              "RelativeToolTip": "Du_An_One\\Migrations\\20240719074722_createtable.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAACBjwIIAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T17:08:49.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-20T14:12:21.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "gcs22gee.sql",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql",
+              "RelativeDocumentMoniker": "Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql",
+              "RelativeToolTip": "Du_An_One\\obj\\Debug\\net6.0\\gcs22gee.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-22T16:37:51.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T15:50:11.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\appsettings.json",
+              "RelativeDocumentMoniker": "Du_An_One\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\appsettings.json",
+              "RelativeToolTip": "Du_An_One\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-20T14:34:00.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Du_An_One\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Du_An_One\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T15:50:13.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Microsoft.NET.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ViewState": "AgIAAL4CAAAAAAAAAAArwMYCAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-07-22T12:58:30.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DocumentLayout.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\.vs\\New_DuAnOne\\v17\\DocumentLayout.json",
+              "RelativeDocumentMoniker": ".vs\\New_DuAnOne\\v17\\DocumentLayout.json",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\.vs\\New_DuAnOne\\v17\\DocumentLayout.json",
+              "RelativeToolTip": ".vs\\New_DuAnOne\\v17\\DocumentLayout.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T11:53:04.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Program.cs",
+              "RelativeDocumentMoniker": "Du_An_One\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\New_DuAnOne\\Du_An_One\\Program.cs",
+              "RelativeToolTip": "Du_An_One\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T14:32:18.414Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 13,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
             }
           ]
         }

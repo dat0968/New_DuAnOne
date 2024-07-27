@@ -21,6 +21,10 @@ namespace Du_An_One.Controllers
         {
             return View(_context.SANPHAM.OrderByDescending(x => x.NgayNhap).Take(6).ToList());
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
         public IActionResult Temp() { return View(); }
         public IActionResult Privacy()
         {

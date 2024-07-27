@@ -103,6 +103,10 @@ namespace Du_An_One.Controllers
             return View(sanPham);
         }
         #endregion
+<<<<<<< HEAD
+=======
+
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
         #region//Hiển thị thumbnail chi tiết sản phẩm
         public IActionResult DetailsViewThubnail(string MaSP)
         {
@@ -119,6 +123,10 @@ namespace Du_An_One.Controllers
             return PartialView(sanPham);
         }
         #endregion
+<<<<<<< HEAD
+=======
+
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
         #region//Tạo sản phẩm
         // GET: SANPHAMs/Create
         public IActionResult Create()

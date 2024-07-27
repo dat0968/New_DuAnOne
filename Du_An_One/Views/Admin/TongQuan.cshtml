@@ -9,7 +9,10 @@
 
 
 @section head {
+<<<<<<< HEAD
     
+=======
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
 }
 <div class="page-inner">
     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
@@ -374,6 +377,7 @@
         const salesRevenueStat = [@ViewBag.SalesRevenueStat[0], @ViewBag.SalesRevenueStat[1], @ViewBag.SalesRevenueStat[2], @ViewBag.SalesRevenueStat[3]];
         const orderStat = [@ViewBag.OrderStat[0], @ViewBag.OrderStat[1], @ViewBag.OrderStat[2], @ViewBag.OrderStat[3]];
         const statusOrder = [
+<<<<<<< HEAD
         @ViewBag.CountOrderByStatus.Total,
         @ViewBag.CountOrderByStatus.WaitPayOrder,
         @ViewBag.CountOrderByStatus.WrapOrder,
@@ -383,6 +387,17 @@
         @ViewBag.CountOrderByStatus.CancelOrder,
         @ViewBag.CountOrderByStatus.BackOrder
                     ];
+=======
+                @ViewBag.CountOrderByStatus.Total,
+                @ViewBag.CountOrderByStatus.WaitPayOrder,
+                @ViewBag.CountOrderByStatus.WrapOrder,
+                @ViewBag.CountOrderByStatus.DeliverOrder,
+                @ViewBag.CountOrderByStatus.WaitDeliverOrder,
+                @ViewBag.CountOrderByStatus.PayOrder,
+                @ViewBag.CountOrderByStatus.CancelOrder,
+                @ViewBag.CountOrderByStatus.BackOrder
+            ];
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
 
         const weekSalesData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.WeekSales.Week));
 

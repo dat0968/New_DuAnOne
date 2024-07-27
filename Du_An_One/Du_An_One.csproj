@@ -155,4 +155,22 @@
     <PackageReference Include="X.PagedList.Mvc.Core" Version="10.0.3" />
   </ItemGroup>
 
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <Folder Include="wwwroot\img\productImage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\_TempLayout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\style_LRF.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
 </Project>

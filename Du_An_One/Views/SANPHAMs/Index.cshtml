@@ -107,7 +107,11 @@
                             <a asp-route-MaSP="@item.MaSP" id="@item.MaSP" class="btn btn-sm btn-primary showDetailsButton">Chi tiết</a> |
                             <a asp-action="Delete" asp-route-id="@item.MaSP" class="btn btn-sm btn-danger"> Xóa</a>
                         </td>
+<<<<<<< HEAD
                         @* <-- asp-action="Details" --> *@
+=======
+                         @* <-- asp-action="Details" --> *@
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
                     </tr>
                 }
             </tbody>
@@ -142,7 +146,11 @@
                         if (xhr.status === 200) {
                             // Nếu yêu cầu thành công, thay đổi nội dung của một phần tử có ID là "contentThumbnail" bằng nội dung trả về từ trang detailsthumbnail
                             document.getElementById("contentThumbnail").innerHTML = xhr.responseText;
+<<<<<<< HEAD
                             document.getElementById("contentThumbnail").style.display = 'grid';
+=======
+                            document.getElementById("contentThumbnail").style.display = 'grid';                            
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
                         }
                     }
                 };

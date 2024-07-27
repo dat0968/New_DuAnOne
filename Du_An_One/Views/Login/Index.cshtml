@@ -4,16 +4,25 @@
 @{
     Layout = null;
 }
+<<<<<<< HEAD
 <head>
     @*
+=======
+<head>@* 
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="~/css/style_LRF.css" asp-append-version="true" />
     @* <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js"
+<<<<<<< HEAD
     defer
     init></script>*@
+=======
+            defer
+            init></script>*@
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
 </head>
 @model LoginViewModel;
 
@@ -26,9 +35,15 @@
         </div>
         <div class="form-control" style="position: relative;">
             <input type="password" asp-for="MatKhau" id="form3Example4" required title="Vui lòng nhập mật khẩu." />
+<<<<<<< HEAD
             <label for="form3Example4">Mật khẩu</label>
             <i class="fa fa-eye" id="togglePassword" style="position: absolute; top: 50%; right: 10px; cursor: pointer; transform: translateY(-50%); color: white;"
                onclick="togglePasswordVisibility(this)"></i>
+=======
+                <label for="form3Example4">Mật khẩu</label>
+                <i class="fa fa-eye" id="togglePassword" style="position: absolute; top: 50%; right: 10px; cursor: pointer; transform: translateY(-50%); color: white;"
+                   onclick="togglePasswordVisibility(this)"></i>
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         </div>
         <div class="form-help">
@@ -42,7 +57,11 @@
         <button type="submit">Đăng nhập</button>
     </form>
     <p>
+<<<<<<< HEAD
         Mới đăng nhập lần đầu?
+=======
+        Mới đăng nhập lần đầu? 
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
         <a asp-controller="Login" asp-action="Register">Đăng kí ngay</a>
     </p>
     <small>
@@ -123,6 +142,7 @@
     </div>
 </section> *@
 
+<<<<<<< HEAD
 <script>
     function togglePasswordVisibility(element) {
         const fieldPassword = element.parentNode.querySelector('input');
@@ -132,3 +152,14 @@
         element.classList.toggle('fa-eye', isText);
     }
 </script>
+=======
+    <script>
+        function togglePasswordVisibility(element) {
+            const fieldPassword = element.parentNode.querySelector('input');
+            const isText = fieldPassword.getAttribute('type') === 'text';
+            fieldPassword.setAttribute('type', isText ? 'password' : 'text');
+            element.classList.toggle('fa-eye-slash', !isText);
+            element.classList.toggle('fa-eye', isText);
+        }
+    </script>
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00

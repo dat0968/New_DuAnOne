@@ -3,6 +3,10 @@ using Du_An_One.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b77a10882098f6844f017e90c81e920784749a00
 namespace Du_An_One.Controllers
 {
     [Authorize]
@@ -175,6 +179,7 @@ namespace Du_An_One.Controllers
             ViewBag.EmployeeStat = employeeStats;
             return View();
         }
+        
         public IActionResult XuatDanhSachThongKeNhanVien()
         {
             int thisMonth = DateTime.Now.Month;
@@ -265,6 +270,7 @@ namespace Du_An_One.Controllers
                 }
             }
         }
+        
         public IActionResult DanhSachHoaDonCuaNhanVien(string MaNV)
         {
             var listCodeCheckOfStaff = _context.HOADON
