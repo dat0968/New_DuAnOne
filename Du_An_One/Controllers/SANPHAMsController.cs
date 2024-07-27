@@ -85,13 +85,13 @@ namespace Du_An_One.Controllers
             //              Problem("Entity set 'Du_An_OneContext.SANPHAM'  is null.");
         }
         #endregion
-        
+
         #region//Chi tiết sản phẩm
         // GET: SANPHAMs/Details/5
         public async Task<IActionResult> Details(string MaSP)
         {
             var sanPham = _context.SANPHAM.SingleOrDefault(x => x.MaSP == MaSP);
-            if (sanPham.HinhAnh.Length > 10)
+            if (sanPham.HinhAnh != null)
             {
                 sanPham.HinhAnh = "~/img/productImage/" + sanPham.HinhAnh;
             }
@@ -103,7 +103,22 @@ namespace Du_An_One.Controllers
             return View(sanPham);
         }
         #endregion
-
+        #region//Hiển thị thumbnail chi tiết sản phẩm
+        public IActionResult DetailsViewThubnail(string MaSP)
+        {
+            var sanPham = _context.SANPHAM.SingleOrDefault(x => x.MaSP == MaSP);
+            if (sanPham.HinhAnh != null)
+            {
+                sanPham.HinhAnh = "~/img/productImage/" + sanPham.HinhAnh;
+            }
+            else
+            {
+                sanPham.HinhAnh = "~/img/productImage/default.jpg";
+            }
+            ViewBag.anhSanPham = _context.HINHANH.Where(x => x.MaSP == MaSP).Select(x => x.HinhAnh).ToList();
+            return PartialView(sanPham);
+        }
+        #endregion
         #region//Tạo sản phẩm
         // GET: SANPHAMs/Create
         public IActionResult Create()

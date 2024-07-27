@@ -58,7 +58,7 @@
             <div class="form-group">
                 <label asp-for="FileImages" class="control-label">Chọn nhiều hình ảnh</label>
                 <input asp-for="FileImages" class="form-control" type="file" accept="image/png, image/jpeg, image/jpg, image/gif" id="takeFiles" multiple />
-                <div id="showImages"></div>
+                <div id="showImages" style="display:flex;gap:20px;"></div>
                 <span asp-validation-for="FileImages" class="text-danger"></span>
             </div>
             <div class="form-group">

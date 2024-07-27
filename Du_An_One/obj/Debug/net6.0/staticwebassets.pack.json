@@ -1477,10 +1477,6 @@
       "PackagePath": "staticwebassets\\img\\productImage\\342612655_1333510283896561_2375452339420527132_n.jpg"
     },
     {
-      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\360_F_597940292_dmaVD664ccNHMDJqi0Wv0SCSexklLyhO.jpg",
-      "PackagePath": "staticwebassets\\img\\productImage\\360_F_597940292_dmaVD664ccNHMDJqi0Wv0SCSexklLyhO.jpg"
-    },
-    {
       "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\3b7a0f099fc01f1ec16c0eaec13767c1.jpg",
       "PackagePath": "staticwebassets\\img\\productImage\\3b7a0f099fc01f1ec16c0eaec13767c1.jpg"
     },
@@ -1491,6 +1487,10 @@
     {
       "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\3d420df70ab544f1d393847c1e646bb6.jpg",
       "PackagePath": "staticwebassets\\img\\productImage\\3d420df70ab544f1d393847c1e646bb6.jpg"
+    },
+    {
+      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\7f4e1d31121ca92c52e1124c268236e9.jpg",
+      "PackagePath": "staticwebassets\\img\\productImage\\7f4e1d31121ca92c52e1124c268236e9.jpg"
     },
     {
       "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\8ae0534a563aa3a778ce869b2ed522d9.jpg",
@@ -1505,8 +1505,24 @@
       "PackagePath": "staticwebassets\\img\\productImage\\Default_vibrant_highcontrast_images_of_sleek_sports_shoe_produ_0.jpg"
     },
     {
+      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\book-open-cover.png",
+      "PackagePath": "staticwebassets\\img\\productImage\\book-open-cover.png"
+    },
+    {
+      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\c1464369e9ddb234afbe55d6df7c4b16_pixian_ai.png",
+      "PackagePath": "staticwebassets\\img\\productImage\\c1464369e9ddb234afbe55d6df7c4b16_pixian_ai.png"
+    },
+    {
+      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\club-sandwich-3538455.jpg",
+      "PackagePath": "staticwebassets\\img\\productImage\\club-sandwich-3538455.jpg"
+    },
+    {
       "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\default.jpg",
       "PackagePath": "staticwebassets\\img\\productImage\\default.jpg"
+    },
+    {
+      "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\productImage\\nMU.png",
+      "PackagePath": "staticwebassets\\img\\productImage\\nMU.png"
     },
     {
       "Id": "D:\\DuAnOnenew\\Du_An_One\\wwwroot\\img\\profile.jpg",
